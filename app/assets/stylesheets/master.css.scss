@@ -1,4 +1,3 @@
-
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -41,8 +40,9 @@
 
 .links a {
   color:black;
-  font-size: 25px;
+  font-size: 23px;
   border-bottom: 1px solid #879696;
+  font-family: 'quicksandbold', sans-serif;
 }
 
 header {
@@ -51,4 +51,14 @@ header {
 
 hr {
   clear:both;
+}
+
+h1 {
+  font-family: 'quicksandbold', sans-serif;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: 'quicksandregular', sans-serif;
+  font-style: italic; 
 }
