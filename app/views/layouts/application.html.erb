@@ -9,20 +9,22 @@
 <body>
   <header>
     <div class="col-xs-3">
-      <div class="circle">
-        <br />
-        Quotes for
-        <br />
-        the adventurer
-        <BR /> 
-        in you
-      </div>
+      <%= link_to root_path, class: 'logo' do %>
+        <div class="circle">
+          <br />
+          Quotes for
+          <br />
+          the adventurer
+          <BR /> 
+          in you
+        </div>
+      <% end %>
     </div>
     <div class="col-xs-4 slogan">
       Echoing nature quotes since 2016
     </div>
     <div class="col-xs-5 links">
-      <%= link_to 'Contribute', '#' %>
+      <%= link_to 'Contribute', new_quote_path %>
       <%= link_to 'About', '#' %>
     </div>
   </header>
@@ -37,7 +39,7 @@
   <div class="footer">
     <div class="container">
       <div class="col-xs-6">
-        <%= link_to "Give me more!", "#", class: 'next-quote' %>
+        <%= link_to "Give me more!", root_path, class: 'next-quote' %>
       </div>
       <div class="col-xs-6 footer-blurb">
         Here's to your next adventure!
